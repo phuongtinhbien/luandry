@@ -50,15 +50,17 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:drawableLeft="@drawable/ic_password"
+                android:drawableTint="@color/startGradientFail"
+                android:drawableTintMode="src_atop"
                 android:drawablePadding="@dimen/input_drawable_padding"
                 android:hint="@string/input_password"
                 android:focusable="true"
                 android:inputType="textPassword"
-                android:textColorHint="@color/textColorHint"
+                android:textColorHint="@color/textColorHintFail"
                 android:textSize="@dimen/font_size_input"
                 android:textColor="@color/textColor"
                 android:id="@+id/login_edt_user_password"
-                android:background="@drawable/bg_input"/>
+                android:background="@drawable/bg_input_error"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

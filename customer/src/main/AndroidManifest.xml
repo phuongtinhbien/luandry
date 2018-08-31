@@ -8,6 +8,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_luancher"
         android:label="@string/app_name"
+        android:logo="@drawable/ic_luancher"
         android:roundIcon="@drawable/ic_luancher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -27,8 +28,13 @@
         <activity
             android:name=".SignUp.SignUpActivity"
             android:theme="@style/AppTheme.FullScreen" />
-        <activity android:name=".SignUp.SignUpDetailActivity"
-            android:theme="@style/AppTheme.FullScreen" ></activity>
+        <activity
+            android:name=".SignUp.SignUpDetailActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity android:name=".Service.Activity.ServiceActivity" />
+        <activity android:name=".InforOrderActivity" />
+        <activity android:name=".PrepareOrderActivity" />
+        <activity android:name=".Categories.Activity.CategoriesActivity"></activity>
     </application>
 
 </manifest>

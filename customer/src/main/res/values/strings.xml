@@ -39,6 +39,26 @@
     <string name="login">Login</string>
     <string name="btn_continue">Continue</string>
     <string name="btn_finish">Finish</string>
-    <string name="service">Name of the service</string>
+    <string name="service">Service</string>
+    <string name="title_service">Name of the service</string>
     <string name="service_sub_title">Short description</string>
+    <string name="promotion">Promotion</string>
+    <string name="notification">Notification</string>
+    <string name="home">Home</string>
+    <string name="user_profile">User Profile</string>
+    <string name="my_order">My order</string>
+    <string name="history">History</string>
+    <string name="pricing">Pricing</string>
+    <string name="log_out">Log out</string>
+    <string name="help">Help</string>
+    <string name="input_time_pick_up">Time pick up</string>
+    <string name="input_time_draff_off">Time draff off</string>
+    <string name="yout_order">Your Order</string>
+    <string name="title_category">Category 1</string>
+    <string name="category_price">VND 10.000</string>
+    <string name="input_material">Material (Optional)</string>
+    <string name="input_production">Production (Optional)</string>
+    <string name="input_note">Note</string>
+    <string name="input_color">Color</string>
+    <string name="input_number">1</string>
 </resources>

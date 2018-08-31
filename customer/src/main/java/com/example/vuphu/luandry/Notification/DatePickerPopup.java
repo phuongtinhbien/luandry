@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.widget.EditText;
 
+import com.example.vuphu.luandry.R;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -32,7 +34,7 @@ public class DatePickerPopup {
             }
 
         };
-        new DatePickerDialog(activity, date, myCalendar
+        new DatePickerDialog(activity, R.style.datepicker, date, myCalendar
                 .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
                 myCalendar.get(Calendar.DAY_OF_MONTH)).show();
     }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/bgWhite"
+    app:cardMaxElevation="20dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="@dimen/card_elevation"
+    android:layout_marginHorizontal="@dimen/margin_item"
+    android:layout_marginVertical="@dimen/margin_item"
+    android:forceHasOverlappingRendering="true"
+    android:overScrollMode="always"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true"
+    android:layout_height="wrap_content">
+    <include
+        layout="@layout/part_item_prepare_order"></include>
+
+</android.support.v7.widget.CardView>

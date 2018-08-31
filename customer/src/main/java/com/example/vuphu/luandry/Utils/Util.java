@@ -4,6 +4,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Util {
 
 
@@ -29,6 +32,13 @@ public class Util {
         if (s.isEmpty() || s == null)
             return false;
         return true;
+    }
+
+    public static String formatDate (String format, Date date){
+        String returnValue = null;
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(format);
+        returnValue = simpleDateFormat.format(date);
+        return returnValue;
     }
 
 

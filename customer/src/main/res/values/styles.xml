@@ -1,4 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -27,6 +29,9 @@
     <style name="ToolBarStyle.Base" parent="">
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
         <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:background">@drawable/bg</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:translationZ">0dp</item>
     </style>
 
     <style name="ToolBarStyle.Event" parent="ToolBarStyle">
@@ -55,5 +60,25 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="textTopic" parent="">
+        <item name="android:layout_margin">12dp</item>
+        <item name="android:fontFamily">sans-serif-black"</item>
+        <item name="android:text">@string/service</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/font_size_topic</item>
+    </style>
+
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/endGradient</item>
+        <item name="colorPrimaryDark">@color/startGradient</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+
+    </style>
+    <style name="textNavigation" parent="">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/font_size_text</item>
+        <item name="android:fontFamily">sans-serif-light</item>
     </style>
 </resources>

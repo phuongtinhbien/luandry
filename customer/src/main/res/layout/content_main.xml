@@ -1,30 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="@dimen/margin_item"
+    android:background="@drawable/bg_white_blue_square"
+    android:nestedScrollingEnabled="true"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    android:background="@color/bgWhite"
+    android:scrollbars="none"
+    android:overScrollMode="never"
     tools:showIn="@layout/app_bar_main">
-<android.support.v7.widget.LinearLayoutCompat
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-    <include
-        layout="@layout/item_service"
-        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_item"
+            android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/textTopic"
+                    android:textColor="@android:color/white"
+                    android:text="@string/promotion"/>
+                <include
+                    layout="@layout/item_promotion"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/textTopic"
+                    android:text="@string/service"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_item"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_service">
 
-    </include>
- <android.support.v7.widget.LinearLayoutCompat
-     android:layout_width="match_parent"
-     android:layout_height="30dp"></android.support.v7.widget.LinearLayoutCompat>
-    <include
-        layout="@layout/item_result_search">
+                </android.support.v7.widget.RecyclerView>
 
-    </include>
-</android.support.v7.widget.LinearLayoutCompat>
+        </LinearLayout>
 
-
-</android.support.constraint.ConstraintLayout>
+</ScrollView>
