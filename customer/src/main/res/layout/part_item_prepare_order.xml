@@ -61,23 +61,14 @@
                         android:textSize="@dimen/font_size_sub_title" />
                 </LinearLayout>
 
-                <FrameLayout
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_gravity="center|right"
-                    android:background="@drawable/badge">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="15"
-                        android:textAlignment="center"
-                        android:id="@+id/item_prepare_order_count"
-                        android:textColor="@android:color/white"
-                        android:textSize="10sp" />
-                </FrameLayout>
-
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right">
+                    <include
+                        layout="@layout/badge">
+                    </include>
+                </LinearLayout>
 
             </LinearLayout>
 

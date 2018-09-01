@@ -1,39 +1,14 @@
 package com.example.vuphu.luandry.Order;
 
-public class OBOrderDetailDetail implements IOrderDetail {
+import com.example.vuphu.luandry.Categories.OBCategories;
 
-    private String avatar;
-    private String title;
-    private String pricing;
+public class OBOrderDetail extends OBCategories implements IOrderDetail {
 
     private String production;
     private String material;
     private String unit;
     private long   count;
-
-    public String getAvatar() {
-        return avatar;
-    }
-
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getPricing() {
-        return pricing;
-    }
-
-    public void setPricing(String pricing) {
-        this.pricing = pricing;
-    }
+    private long    selectedIndx; //default -1...not selected
 
     public String getProduction() {
         return production;
@@ -65,5 +40,13 @@ public class OBOrderDetailDetail implements IOrderDetail {
 
     public void setCount(long count) {
         this.count = count;
+    }
+
+    public long getSelectedIndx() {
+        return selectedIndx;
+    }
+
+    public void setSelectedIndx(long selectedIndx) {
+        this.selectedIndx = selectedIndx;
     }
 }

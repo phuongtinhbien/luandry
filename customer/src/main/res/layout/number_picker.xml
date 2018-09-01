@@ -16,8 +16,9 @@
         android:textColor="@android:color/white"
         android:background="@drawable/btn_bg"
         android:id="@+id/decrement"
+        android:fontFamily="sans-serif-black"
         android:layout_weight="1"
-        android:textSize="@dimen/font_size_title"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:text="—"/>
 
@@ -28,8 +29,10 @@
         android:layout_weight="1"
         android:inputType="number"
         android:hint="@string/input_number"
+        android:focusable="false"
         android:textAlignment="center"
         android:textSize="@dimen/font_size_input"
+        android:fontFamily="sans-serif-black"
         android:textColor="@color/textColor"
         android:textColorHint="@color/textColorHint"
         android:id="@+id/value"
@@ -41,7 +44,8 @@
         android:layout_margin="@dimen/margin_item"
         android:layout_weight="1"
         android:textColor="@android:color/white"
-        android:textSize="@dimen/font_size_title"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
         android:background="@drawable/btn_bg"
         android:id="@+id/increment"
         android:text="+"/>

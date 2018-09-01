@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgWhite"
-    tools:context=".InforOrderActivity">
+    tools:context=".Order.Activity.InforOrderActivity">
 
     <ScrollView
         android:layout_width="match_parent"

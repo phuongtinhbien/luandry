@@ -32,8 +32,8 @@
             android:name=".SignUp.SignUpDetailActivity"
             android:theme="@style/AppTheme.FullScreen" />
         <activity android:name=".Service.Activity.ServiceActivity" />
-        <activity android:name=".InforOrderActivity" />
-        <activity android:name=".PrepareOrderActivity" />
+        <activity android:name=".Order.Activity.InforOrderActivity" />
+        <activity android:name=".Order.Activity.PrepareOrderActivity" />
         <activity android:name=".Categories.Activity.CategoriesActivity"></activity>
     </application>
 

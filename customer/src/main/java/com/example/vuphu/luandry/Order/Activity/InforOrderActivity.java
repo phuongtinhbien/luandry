@@ -1,8 +1,10 @@
-package com.example.vuphu.luandry;
+package com.example.vuphu.luandry.Order.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.vuphu.luandry.R;
 
 public class InforOrderActivity extends AppCompatActivity {
 

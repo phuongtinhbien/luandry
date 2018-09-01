@@ -1,6 +1,8 @@
 package com.example.vuphu.luandry.Order;
 
-public interface IOrderDetail {
+import com.example.vuphu.luandry.Categories.ICategories;
+
+public interface IOrderDetail extends ICategories {
 
     public String getAvatar();
 

@@ -8,8 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.vuphu.luandry.Categories.Activity.CategoriesActivity;
-import com.example.vuphu.luandry.PrepareOrderActivity;
+import com.example.vuphu.luandry.Order.Activity.PrepareOrderActivity;
 import com.example.vuphu.luandry.R;
 import com.example.vuphu.luandry.Service.IService;
 
