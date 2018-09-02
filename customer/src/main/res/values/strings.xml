@@ -61,4 +61,10 @@
     <string name="input_note">Note</string>
     <string name="input_color">Color</string>
     <string name="input_number">1</string>
+    <string name="notify_choose_more">Please choose more than 0</string>
+    <string name="category">All Categories</string>
+    <string name="input_location_pickup">Pick up place</string>
+    <string name="input_location_dropoff">Drop off place</string>
+    <string name="title_your_address">Your address</string>
+    <string name="TimePickDraff">Schedule</string>
 </resources>

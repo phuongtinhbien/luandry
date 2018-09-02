@@ -1,9 +1,7 @@
 package com.example.vuphu.luandry;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -15,11 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Adapter;
 
 import com.example.vuphu.luandry.Notification.Popup;
 import com.example.vuphu.luandry.Service.AdapterList.ListServiceAdapter;
-import com.example.vuphu.luandry.Service.IService;
 import com.example.vuphu.luandry.Service.OBService;
 
 import java.util.ArrayList;
@@ -67,13 +63,13 @@ public class MainActivity extends AppCompatActivity
         listService.setLayoutManager(linearLayoutManager);
         listService.setHasFixedSize(true);
 
-        List<IService> listItem = new ArrayList<>();
+        List<OBService> listItem = new ArrayList<>();
 
-        IService item = new OBService();
+        OBService item = new OBService();
         item.setName("Washing your clothes");
         item.setDesc("A lot type of washing for you choose");
         item.setIcon(String.valueOf(R.drawable.ic_app));
-        IService item1 = new OBService();
+        OBService item1 = new OBService();
         item1.setName("Washing your clothes");
         item1.setDesc("A lot type of washing for you choose");
         item1.setIcon(String.valueOf(R.drawable.ic_app));

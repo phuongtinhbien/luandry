@@ -3,6 +3,8 @@
     package="com.example.vuphu.luandry">
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -33,8 +35,17 @@
             android:theme="@style/AppTheme.FullScreen" />
         <activity android:name=".Service.Activity.ServiceActivity" />
         <activity android:name=".Order.Activity.InforOrderActivity" />
-        <activity android:name=".Order.Activity.PrepareOrderActivity" />
-        <activity android:name=".Categories.Activity.CategoriesActivity"></activity>
+        <activity
+            android:name=".Order.Activity.PrepareOrderActivity"
+            android:label="Choose your clothes"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".Product.Activity.ProductsActivity" />
+        <activity
+            android:name=".Order.Activity.PrepareOrderAddressActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity android:name=".Order.Activity.PrepareOrderTimeNoteActivity"></activity>
     </application>
 
 </manifest>

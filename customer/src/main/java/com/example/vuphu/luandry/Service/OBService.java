@@ -1,6 +1,8 @@
 package com.example.vuphu.luandry.Service;
 
-public class OBService implements IService {
+import java.io.Serializable;
+
+public class OBService implements Serializable {
 
     private long id;
     private String name;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:background="@drawable/bg"
-    tools:context=".Categories.Activity.CategoriesActivity">
+    tools:context=".Product.Activity.ProductsActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

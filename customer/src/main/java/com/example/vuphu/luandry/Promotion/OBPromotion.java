@@ -1,6 +1,8 @@
 package com.example.vuphu.luandry.Promotion;
 
-public class OBPromotion implements IPromotion{
+import java.io.Serializable;
+
+public class OBPromotion implements Serializable {
 
     private String img;
     private String name;

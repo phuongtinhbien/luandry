@@ -3,27 +3,29 @@ package com.example.vuphu.luandry.Order.ApdapterList;
 import android.app.Activity;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.vuphu.luandry.Order.IOrderDetail;
+import com.example.vuphu.luandry.Order.OBOrderDetail;
 import com.example.vuphu.luandry.R;
-import com.example.vuphu.luandry.Service.IService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListOrderDetailAdapter extends RecyclerView.Adapter<ListOrderDetailViewHolder> {
 
 
     private static String CURRENCY = "VND";
-    List<IOrderDetail> list;
-    List<IOrderDetail> selectedList;
+    List<OBOrderDetail> list;
+    List<OBOrderDetail> selectedList;
     Activity context;
 
-    public ListOrderDetailAdapter(Activity applicationContext, List<IOrderDetail> listItem) {
+    public ListOrderDetailAdapter(Activity applicationContext, List<OBOrderDetail> listItem) {
         this.context = applicationContext;
         this.list = listItem;
+        this.selectedList = new ArrayList<>();
     }
 
     @NonNull
@@ -39,7 +41,8 @@ public class ListOrderDetailAdapter extends RecyclerView.Adapter<ListOrderDetail
 
         holder.title.setText(list.get(position).getTitle());
         holder.price.setText(CURRENCY + " " + list.get(position).getPricing());
-        list.get(position).setCount(Long.parseLong(holder.count.toString()));
+        holder.processData(list.get(position));
+        Log.i("data", list.get(position).getCount()+"");
 
     }
 
@@ -48,4 +51,9 @@ public class ListOrderDetailAdapter extends RecyclerView.Adapter<ListOrderDetail
         return list.size();
     }
 
+    public void refreshAdapter(List<OBOrderDetail> list){
+        this.list.clear();
+        this.list.addAll(list);
+        notifyDataSetChanged();
+    }
 }

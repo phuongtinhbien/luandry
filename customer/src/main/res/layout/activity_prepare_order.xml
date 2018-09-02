@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,20 +7,18 @@
     android:fitsSystemWindows="true"
     android:background="@drawable/bg"
     tools:context=".Order.Activity.PrepareOrderActivity">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/bgWhite">
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/prepare_order_list_category"
-            tools:listitem="@layout/item_prepare_order">
-        </android.support.v7.widget.RecyclerView>
+        <include
+            layout="@layout/prepare_order_include">
+        </include>
 
-    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_arrow_forward"
+        android:id="@+id/prepare_order_next"
+        android:layout_gravity="bottom|end"/>
 
-
-
-</android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

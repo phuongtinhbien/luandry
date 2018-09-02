@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.vuphu.luandry.Order.OBOrderDetail;
 import com.example.vuphu.luandry.R;
 import com.example.vuphu.luandry.Utils.Util;
 
@@ -28,6 +29,7 @@ public class ListOrderDetailViewHolder extends ViewHolder {
     FrameLayout badge;
     EditText value;
     Button   decrement, increment;
+    OBOrderDetail detail;
     public ListOrderDetailViewHolder(View itemView) {
         super(itemView);
         this.itemView = itemView;
@@ -88,6 +90,7 @@ public class ListOrderDetailViewHolder extends ViewHolder {
 
         value.setText(String.valueOf(Long.parseLong(value.getText().toString())+1));
         count.setText(String.valueOf(value.getText().toString()));
+        detail.setCount(Long.parseLong(value.getText().toString()));
         checkLimit();
         showHideBadge();
     }
@@ -95,15 +98,14 @@ public class ListOrderDetailViewHolder extends ViewHolder {
 
         value.setText(String.valueOf(Long.parseLong(value.getText().toString())-1));
         count.setText(String.valueOf(value.getText().toString()));
+        detail.setCount(Long.parseLong(value.getText().toString()));
         checkLimit();
         showHideBadge();
     }
 
-
-
     public void checkLimit(){
         if (Long.parseLong(value.getText().toString())<=0){
-            Toast.makeText(itemView.getContext(), "Please choose more than 0", Toast.LENGTH_SHORT).show();
+            Toast.makeText(itemView.getContext(), R.string.notify_choose_more, Toast.LENGTH_SHORT).show();
             value.setText("0");
             decrement.setClickable(false);
         }
@@ -119,5 +121,9 @@ public class ListOrderDetailViewHolder extends ViewHolder {
         else {
             badge.setVisibility(View.GONE);
         }
+    }
+
+    public void processData(OBOrderDetail detail){
+        this.detail = detail;
     }
 }

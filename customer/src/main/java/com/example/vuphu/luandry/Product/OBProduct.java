@@ -1,10 +1,13 @@
-package com.example.vuphu.luandry.Categories;
+package com.example.vuphu.luandry.Product;
 
-public class OBCategories implements ICategories {
+import java.io.Serializable;
+
+public class OBProduct implements Serializable {
 
     private String avatar;
     private String title;
     private String pricing;
+    private String category;
 
     public String getAvatar() {
         return avatar;
@@ -28,5 +31,13 @@ public class OBCategories implements ICategories {
 
     public void setPricing(String pricing) {
         this.pricing = pricing;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 }

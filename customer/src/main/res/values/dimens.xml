@@ -7,8 +7,8 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="margin_item">8dp</dimen>
     <dimen name="card_elevation">12dp</dimen>
-    <dimen name="card_margin">20dp</dimen>
-    <dimen name="card_radius">20dp</dimen>
+    <dimen name="card_margin">15dp</dimen>
+    <dimen name="card_radius">15dp</dimen>
     <!--font size-->
     <dimen name="font_size_input">16sp</dimen>
     <dimen name="font_size_text">14sp</dimen>

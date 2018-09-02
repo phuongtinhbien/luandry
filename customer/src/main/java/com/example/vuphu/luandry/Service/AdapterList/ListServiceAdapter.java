@@ -10,17 +10,17 @@ import android.view.ViewGroup;
 
 import com.example.vuphu.luandry.Order.Activity.PrepareOrderActivity;
 import com.example.vuphu.luandry.R;
-import com.example.vuphu.luandry.Service.IService;
+import com.example.vuphu.luandry.Service.OBService;
 
 import java.util.List;
 
 public class ListServiceAdapter extends RecyclerView.Adapter<ListServiceViewHolder> {
 
 
-    List<IService> listService;
+    List<OBService> listService;
     Activity context;
 
-    public ListServiceAdapter(Activity applicationContext, List<IService> listItem) {
+    public ListServiceAdapter(Activity applicationContext, List<OBService> listItem) {
         this.context = applicationContext;
         this.listService = listItem;
     }

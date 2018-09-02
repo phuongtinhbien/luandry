@@ -1,14 +1,19 @@
 package com.example.vuphu.luandry.Order;
 
-import com.example.vuphu.luandry.Categories.OBCategories;
+import com.example.vuphu.luandry.Product.OBProduct;
 
-public class OBOrderDetail extends OBCategories implements IOrderDetail {
+import java.io.Serializable;
+
+import me.aflak.filter_annotation.Filterable;
+
+@Filterable
+public class OBOrderDetail extends OBProduct implements Serializable {
 
     private String production;
     private String material;
     private String unit;
     private long   count;
-    private long    selectedIndx; //default -1...not selected
+    private boolean   selectedIndx; //default -1...not selected
 
     public String getProduction() {
         return production;
@@ -42,11 +47,12 @@ public class OBOrderDetail extends OBCategories implements IOrderDetail {
         this.count = count;
     }
 
-    public long getSelectedIndx() {
+
+    public boolean isSelectedIndx() {
         return selectedIndx;
     }
 
-    public void setSelectedIndx(long selectedIndx) {
+    public void setSelectedIndx(boolean selectedIndx) {
         this.selectedIndx = selectedIndx;
     }
 }
