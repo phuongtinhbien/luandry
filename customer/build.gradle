@@ -42,6 +42,7 @@ dependencies {
     //Map
     implementation 'com.mapfit:android-sdk:2.1.1'
     implementation 'com.github.florent37:android-slidr:1.0.3'
+    implementation 'com.uniquestudio:checkbox:1.0.10'
 
 
 }

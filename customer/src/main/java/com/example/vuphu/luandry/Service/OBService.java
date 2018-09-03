@@ -2,12 +2,17 @@ package com.example.vuphu.luandry.Service;
 
 import java.io.Serializable;
 
+import me.aflak.filter_annotation.Filterable;
+
+@Filterable
 public class OBService implements Serializable {
 
     private long id;
     private String name;
     private String desc;
     private String icon;
+
+    private String selectedInd;
 
     public OBService(long id, String name, String desc, String icon) {
         this.id = id;
@@ -50,5 +55,13 @@ public class OBService implements Serializable {
 
     public void setIcon(String icon) {
         this.icon = icon;
+    }
+
+    public String getSelectedInd() {
+        return selectedInd;
+    }
+
+    public void setSelectedInd(String selectedInd) {
+        this.selectedInd = selectedInd;
     }
 }

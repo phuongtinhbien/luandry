@@ -67,10 +67,15 @@
     <string name="input_location_dropoff">Drop off place</string>
     <string name="title_your_address">Hi, John Doe</string>
     <string name="TimePickDraff">Schedule</string>
-    <string name="date_time_pick_up">Date pick up</string>
+    <string name="date_time_pick_up">Pick up</string>
     <string name="date_time_drop_off">Date delivery</string>
     <string name="input_location_customer">Who takes this order?</string>
     <string name="input_location_contact">Your phone number</string>
     <string name="payment">Payment</string>
     <string name="cash_payment">Money cash</string>
+    <string name="title_choose_service">Choose service you want</string>
+    <string name="title_choose_payment">Choose payment you want</string>
+    <string name="amount">Amount</string>
+    <string name="total">Total: </string>
+    <string name="delivery">Delivery</string>
 </resources>

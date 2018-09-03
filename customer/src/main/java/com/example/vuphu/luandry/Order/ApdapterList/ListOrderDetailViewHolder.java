@@ -44,7 +44,6 @@ public class ListOrderDetailViewHolder extends ViewHolder {
         production = itemView.findViewById(R.id.item_prepare_order_production);
         material = itemView.findViewById(R.id.item_prepare_order_material);
         color = itemView.findViewById(R.id.item_prepare_order_color);
-        note = itemView.findViewById(R.id.item_prepare_order_note);
         slidr = (Slidr) itemView.findViewById(R.id.item_prepare_order_seek_count);
         //Number Picker
        /* value     =itemView.findViewById(R.id.value);

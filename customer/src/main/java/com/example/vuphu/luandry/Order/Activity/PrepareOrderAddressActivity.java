@@ -70,7 +70,7 @@ public class PrepareOrderAddressActivity extends AppCompatActivity {
         prepareNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), PrepareOrderTimeNoteActivity.class));
+                startActivity(new Intent(getApplicationContext(), InfoOrderActivity.class));
             }
         });
     }

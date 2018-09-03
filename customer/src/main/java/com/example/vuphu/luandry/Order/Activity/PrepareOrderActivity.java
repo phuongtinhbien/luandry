@@ -9,7 +9,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.LinearLayout;
 
 import com.example.vuphu.luandry.Categories.OBCategory;
 import com.example.vuphu.luandry.Order.ApdapterList.ListChipAdapter;

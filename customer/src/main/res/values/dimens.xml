@@ -11,7 +11,7 @@
     <dimen name="card_radius">10dp</dimen>
     <!--font size-->
     <dimen name="font_size_input">16sp</dimen>
-    <dimen name="font_size_text">14sp</dimen>
+    <dimen name="font_size_text">12sp</dimen>
     <dimen name="font_size_title">14sp</dimen>
     <dimen name="font_size_btn">14sp</dimen>
     <dimen name="font_size_title_item">16sp</dimen>
@@ -36,4 +36,5 @@
     <dimen name="promotion_size">200dp</dimen>
     <dimen name="item_category_size">72dp</dimen>
     <dimen name="item_prepare_order_size">72dp</dimen>
+    <dimen name="avatar_order_size">52dp</dimen>
 </resources>

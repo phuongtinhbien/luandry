@@ -1,5 +1,6 @@
 package com.example.vuphu.luandry;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.vuphu.luandry.Notification.Popup;
+import com.example.vuphu.luandry.Order.Activity.PrepareOrderActivity;
 import com.example.vuphu.luandry.Service.AdapterList.ListServiceAdapter;
 import com.example.vuphu.luandry.Service.OBService;
 
@@ -36,9 +38,10 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Popup popup = new Popup(MainActivity.this);
+               /* Popup popup = new Popup(MainActivity.this);
                 popup.createSuccessDialog(R.string.notify_successfully_saved,R.string.btn_ok);
-                popup.show();
+                popup.show();*/
+               startActivity(new Intent(getApplicationContext(), PrepareOrderActivity.class));
 
             }
         });
