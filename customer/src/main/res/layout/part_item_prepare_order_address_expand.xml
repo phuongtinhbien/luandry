@@ -6,12 +6,35 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_margin="@dimen/margin_item"
-        android:orientation="horizontal">
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="@dimen/input_drawable_padding"
+        android:hint="@string/input_location_customer"
+        android:inputType="text"
+        android:textColorHint="@color/textColorHint"
+        android:textSize="@dimen/font_size_input"
+        android:textColor="@color/textColor"
+        android:id="@+id/prepare_order_address_who"
+        android:background="@drawable/bg_input"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_contact"
+            android:drawablePadding="@dimen/input_drawable_padding"
+            android:hint="@string/input_location_contact"
+            android:inputType="text"
+            android:textColorHint="@color/textColorHint"
+            android:textSize="@dimen/font_size_input"
+            android:textColor="@color/textColor"
+            android:id="@+id/prepare_order_address_contact_phone"
+            android:background="@drawable/bg_input"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,18 +50,13 @@
             android:id="@+id/prepare_order_address_pick_up"
             android:background="@drawable/bg_input"/>
 
-    </android.support.v7.widget.LinearLayoutCompat>
-    <android.support.v7.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_margin="@dimen/margin_item"
-        android:orientation="horizontal">
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:drawableLeft="@drawable/ic_location"
             android:drawablePadding="@dimen/input_drawable_padding"
             android:hint="@string/input_location_dropoff"
@@ -49,7 +67,6 @@
             android:id="@+id/prepare_order_address_drop_off"
             android:background="@drawable/bg_input"/>
 
-    </android.support.v7.widget.LinearLayoutCompat>
 
 
 

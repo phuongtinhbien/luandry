@@ -20,6 +20,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             app:navigationIcon="@drawable/ic_menu"
+            app:titleMarginStart="85dp"
             app:titleTextAppearance="@style/TextAppearance.Widget.Event.Toolbar.Title"
             style="@style/ToolBarStyle"
             app:popupTheme="@style/AppTheme.AppBarOverlay"
@@ -38,6 +39,7 @@
         app:fabSize="normal"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/ic_qrcode" />
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        app:srcCompat="@drawable/ic_arrow_forward" />
 
 </android.support.design.widget.CoordinatorLayout>

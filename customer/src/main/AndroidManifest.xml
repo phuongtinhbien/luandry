@@ -13,7 +13,7 @@
         android:logo="@drawable/ic_luancher"
         android:roundIcon="@drawable/ic_luancher"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -40,12 +40,15 @@
             android:label="Choose your clothes"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme1" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Product.Activity.ProductsActivity" />
         <activity
             android:name=".Order.Activity.PrepareOrderAddressActivity"
-            android:theme="@style/AppTheme.FullScreen" />
-        <activity android:name=".Order.Activity.PrepareOrderTimeNoteActivity"></activity>
+            android:theme="@style/AppTheme.FullScreen"></activity>
+        <activity android:name=".Order.Activity.PrepareOrderTimeNoteActivity"
+            android:parentActivityName=".Order.Activity.PrepareOrderAddressActivity"/>
+        <activity android:name=".Order.Activity.PrepareOrderPaymentActivity"
+            android:parentActivityName=".Order.Activity.PrepareOrderTimeNoteActivity"></activity>
     </application>
 
 </manifest>

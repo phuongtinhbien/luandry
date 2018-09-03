@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.example.vuphu.luandry.Order.OBOrderDetail;
 import com.example.vuphu.luandry.R;
 import com.example.vuphu.luandry.Utils.Util;
+import com.github.florent37.androidslidr.Slidr;
 
 public class ListOrderDetailViewHolder extends ViewHolder {
 
@@ -27,8 +28,11 @@ public class ListOrderDetailViewHolder extends ViewHolder {
     EditText note;
     //Number Picker
     FrameLayout badge;
-    EditText value;
-    Button   decrement, increment;
+
+    Slidr slidr ;
+
+  /*  EditText value;
+    Button   decrement, increment;*/
     OBOrderDetail detail;
     public ListOrderDetailViewHolder(View itemView) {
         super(itemView);
@@ -41,20 +45,64 @@ public class ListOrderDetailViewHolder extends ViewHolder {
         material = itemView.findViewById(R.id.item_prepare_order_material);
         color = itemView.findViewById(R.id.item_prepare_order_color);
         note = itemView.findViewById(R.id.item_prepare_order_note);
-
+        slidr = (Slidr) itemView.findViewById(R.id.item_prepare_order_seek_count);
         //Number Picker
-        value     =itemView.findViewById(R.id.value);
+       /* value     =itemView.findViewById(R.id.value);
         value.setText("0");
         Util.showHideCursor(value);
         decrement = itemView.findViewById(R.id.decrement);
-        increment = itemView.findViewById(R.id.increment);
+        increment = itemView.findViewById(R.id.increment);*/
 
         badge = itemView.findViewById(R.id.badge);
-        processCount();
-        showHideBadge();
+      /*  processCount();
+        showHideBadge();*/
+        countValue();
     }
 
-    public void processCount(){
+    public void countValue(){
+        slidr.setMax(60);
+        slidr.setMin(0);
+        slidr.setCurrentValue(0);
+        showHideBadge((int)slidr.getCurrentValue());
+        slidr.setTextFormatter(new Slidr.TextFormatter() {
+            @Override
+            public String format(float value) {
+
+                return value>0?String.valueOf((int)value) + " items":String.valueOf((int)value) + " item";
+            }
+        });
+        slidr.setListener(new Slidr.Listener() {
+            @Override
+            public void valueChanged(Slidr slidr, float currentValue) {
+                slidr.setCurrentValue(currentValue);
+                showHideBadge((int) currentValue);
+            }
+
+            @Override
+            public void bubbleClicked(Slidr slidr) {
+
+            }
+        });
+    }
+
+    public void showHideBadge(int value){
+        if (value>0){
+            badge.setVisibility(View.VISIBLE);
+            count.setText(value+"");
+        }
+        else {
+            badge.setVisibility(View.GONE);
+            count.setText("");
+        }
+    }
+
+
+    public void processData(OBOrderDetail detail){
+        this.detail = detail;
+    }
+
+
+   /* public void processCount(){
 
         decrement.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,18 +160,6 @@ public class ListOrderDetailViewHolder extends ViewHolder {
         else {
             decrement.setClickable(true);
         }
-    }
+    }*/
 
-    public void showHideBadge(){
-        if (Long.parseLong(value.getText().toString())>0){
-            badge.setVisibility(View.VISIBLE);
-        }
-        else {
-            badge.setVisibility(View.GONE);
-        }
-    }
-
-    public void processData(OBOrderDetail detail){
-        this.detail = detail;
-    }
 }

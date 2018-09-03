@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -32,15 +33,26 @@ public class PrepareOrderActivity extends AppCompatActivity {
     private ListChipAdapter listChipAdapter;
     private FloatingActionButton floatingActionButton;
 
+    private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prepare_order);
 
+        initToolbar();
         init();
     }
 
+    private void initToolbar() {
+        toolbar =  findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitle("Choose your clothes");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
     private void init() {
+
         listPrepareOrder = findViewById(R.id.prepare_order_list_category);
         listPrepareOrder.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);

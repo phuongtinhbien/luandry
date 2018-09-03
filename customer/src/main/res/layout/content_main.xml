@@ -1,45 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/margin_item"
     android:background="@drawable/bg_white_blue_square"
-    android:nestedScrollingEnabled="true"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    android:scrollbars="none"
-    android:overScrollMode="never"
     tools:showIn="@layout/app_bar_main">
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="@dimen/margin_item"
-            android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    style="@style/textTopic"
-                    android:textColor="@android:color/white"
-                    android:text="@string/promotion"/>
-                <include
-                    layout="@layout/item_promotion"></include>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    style="@style/textTopic"
-                    android:text="@string/service"/>
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/list_service"
+            android:overScrollMode="never"
+            android:scrollbarSize="0dp">
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="@dimen/margin_item"
-                    android:nestedScrollingEnabled="false"
-                    tools:listitem="@layout/item_service">
+                    android:orientation="vertical">
+                        <include
+                            layout="@layout/nav_header_main"></include>
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/list_service"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            tools:listitem="@layout/item_service">
 
-                </android.support.v7.widget.RecyclerView>
+                        </android.support.v7.widget.RecyclerView>
 
-        </LinearLayout>
+                </LinearLayout>
+        </ScrollView>
 
-</ScrollView>
+
+</LinearLayout>

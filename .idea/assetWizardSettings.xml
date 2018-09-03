@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/device/ic_access_time_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/communication/ic_contact_phone_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,10 +33,12 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="3a6def" />
-                            <entry key="outputName" value="ic_time" />
+                            <entry key="color" value="2699fb" />
+                            <entry key="height" value="12" />
+                            <entry key="outputName" value="ic_contact" />
                             <entry key="overrideSize" value="true" />
                             <entry key="sourceFile" value="C:\Users\vuphu\Desktop\luanvan\Lu-n-v-n\prototype\icon\ic_expand.svg" />
+                            <entry key="width" value="12" />
                           </map>
                         </option>
                       </PersistentState>

@@ -7,8 +7,10 @@
     android:fitsSystemWindows="true"
     android:background="@drawable/bg"
     tools:context=".Order.Activity.PrepareOrderActivity">
+
         <include
-            layout="@layout/prepare_order_include">
+            layout="@layout/prepare_order_include"
+            >
         </include>
 
     <android.support.design.widget.FloatingActionButton

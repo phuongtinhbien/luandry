@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg"
     android:scrollbarSize="0.1dp"
+    android:fitsSystemWindows="true"
     tools:context=".Order.Activity.PrepareOrderTimeNoteActivity">
 
     <android.support.v7.widget.LinearLayoutCompat
@@ -13,12 +14,16 @@
         android:layout_height="match_parent"
         android:background="@color/bgWhite"
         android:orientation="vertical">
+        <include
+            layout="@layout/toolbar"></include>
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:forceHasOverlappingRendering="true">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/card_margin"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
@@ -29,8 +34,8 @@
                     android:text="@string/TimePickDraff"/>
                 <android.support.v7.widget.CardView
                     app:cardBackgroundColor="@color/bgWhite"
-                    app:cardMaxElevation="20dp"
-                    app:cardCornerRadius="20dp"
+                    app:cardMaxElevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
                     android:layout_width="match_parent"
                     app:cardElevation="@dimen/card_elevation"
                     android:layout_marginHorizontal="@dimen/card_margin"
@@ -40,17 +45,151 @@
                     android:foreground="?selectableItemBackground"
                     android:clickable="true"
                     android:layout_height="wrap_content">
-                    <android.support.v7.widget.LinearLayoutCompat
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/margin_item"
-                        android:orientation="vertical">
-
-
-                    </android.support.v7.widget.LinearLayoutCompat>
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/date_time_pick_up"
+                                android:layout_marginLeft="@dimen/margin_item"
+                                android:id="@+id/item_prepare_order_date_time_pick_up"
+                                android:textColor="@color/textColor"
+                                android:fontFamily="sans-serif-black"
+                                android:textSize="@dimen/font_size_title_item"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_item"
+                                android:textColor="@color/textColor"
+                                android:id="@+id/item_prepare_order_date_pick_up"
+                                android:text="30 - 12 -2018"
+                                android:drawableLeft="@drawable/ic_calendar"
+                                android:drawablePadding="4dp"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:textSize="@dimen/font_size_sub_title"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_item"
+                                android:textColor="@color/textColor"
+                                android:drawableLeft="@drawable/ic_time"
+                                android:drawablePadding="4dp"
+                                android:id="@+id/item_prepare_order_time_pick_up"
+                                android:text="12 : 00 PM"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:textSize="@dimen/font_size_sub_title"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/date_time_drop_off"
+                                android:layout_marginLeft="@dimen/margin_item"
+                                android:id="@+id/item_prepare_order_date_time_drop_off"
+                                android:textColor="@color/textColor"
+                                android:fontFamily="sans-serif-black"
+                                android:textSize="@dimen/font_size_title_item"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_item"
+                                android:textColor="@color/textColor"
+                                android:id="@+id/item_prepare_order_date_drop_off"
+                                android:text="30 - 12 -2018"
+                                android:drawableLeft="@drawable/ic_calendar"
+                                android:drawablePadding="4dp"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:textSize="@dimen/font_size_sub_title"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_item"
+                                android:textColor="@color/textColor"
+                                android:drawableLeft="@drawable/ic_time"
+                                android:drawablePadding="4dp"
+                                android:id="@+id/item_prepare_order_time_drop_off"
+                                android:text="12 : 00 PM"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:textSize="@dimen/font_size_sub_title"/>
+                        </LinearLayout>
+                    </LinearLayout>
                 </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/textTopic"
+                    android:layout_margin="@dimen/margin_item"
+                    android:textColor="@android:color/black"
+                    android:text="@string/payment"/>
+                <include
+                    layout="@layout/item_payment"></include>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/textTopic"
+                    android:layout_margin="@dimen/margin_item"
+                    android:textColor="@android:color/black"
+                    android:text="@string/input_note"/>
+                <android.support.v7.widget.CardView
+                    app:cardBackgroundColor="@color/bgWhite"
+                    app:cardMaxElevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    android:layout_width="match_parent"
+                    app:cardElevation="@dimen/card_elevation"
+                    android:layout_marginHorizontal="@dimen/card_margin"
+                    android:layout_marginVertical="@dimen/margin_item"
+                    android:forceHasOverlappingRendering="true"
+                    android:overScrollMode="always"
+                    android:foreground="?selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:inputType="textMultiLine"
+                        android:lines="4"
+                        android:maxLines="10"
+                        android:drawableLeft="@drawable/ic_note"
+                        android:drawablePadding="@dimen/input_drawable_padding"
+                        android:hint="@string/input_note"
+                        android:textSize="@dimen/font_size_input"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/textColorHint"
+                        android:id="@+id/item_prepare_order_note"
+                        android:background="@drawable/bg_input"/>
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_finish"
+                    android:translationZ="4dp"
+                    android:elevation="10dp"
+                    android:layout_margin="24dp"
+                    android:textColor="@color/textColorBtn"
+                    android:textSize="@dimen/font_size_btn"
+                    android:id="@+id/btn_login"
+                    android:background="@drawable/btn_bg"/>
             </LinearLayout>
+
         </ScrollView>
 
     </android.support.v7.widget.LinearLayoutCompat>
+
 </android.support.constraint.ConstraintLayout>

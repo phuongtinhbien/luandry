@@ -39,6 +39,9 @@ dependencies {
     implementation 'me.aflak.libraries:filter-annotation:1.2'
     annotationProcessor 'me.aflak.libraries:filter-processor:1.2'
     implementation 'com.robertlevonyan.view:MaterialChipView:1.2.4'
+    //Map
     implementation 'com.mapfit:android-sdk:2.1.1'
+    implementation 'com.github.florent37:android-slidr:1.0.3'
+
 
 }
