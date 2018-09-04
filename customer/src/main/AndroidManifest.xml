@@ -33,8 +33,9 @@
         <activity
             android:name=".SignUp.SignUpDetailActivity"
             android:theme="@style/AppTheme.FullScreen" />
-        <activity android:name=".Order.Activity.InfoOrderActivity"
-            android:parentActivityName=".Order.Activity.PrepareOrderAddressActivity"/>
+        <activity
+            android:name=".Order.Activity.InfoOrderActivity"
+            android:parentActivityName=".Order.Activity.PrepareOrderAddressActivity" />
         <activity
             android:name=".Order.Activity.PrepareOrderActivity"
             android:label="Choose your clothes"
@@ -45,9 +46,9 @@
         <activity
             android:name=".Order.Activity.PrepareOrderAddressActivity"
             android:theme="@style/AppTheme.FullScreen" />
-        <activity
-            android:name=".Order.Activity.PrepareOrderPaymentActivity" />
-        <activity android:name=".Payment.Activity.PaymentActivity"></activity>
+        <activity android:name=".Order.Activity.PrepareOrderPaymentActivity" />
+        <activity android:name=".Payment.Activity.PaymentActivity" />
+        <activity android:name=".FinalOrderActivity"></activity>
     </application>
 
 </manifest>

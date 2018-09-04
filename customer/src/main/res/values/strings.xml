@@ -19,6 +19,7 @@
     <string name="notify_fail">Something went wrong\nPlease check!</string>
     <string name="notify_lost_connection">Lost the connection\nPlease check!</string>
     <string name="notify_loading">Loading...</string>
+    <string name="notify_cant_choose">Not available</string>
     <string name="btn_ok">OK</string>
     <string name="btn_fail">FAIL</string>
 
@@ -78,4 +79,6 @@
     <string name="amount">Amount</string>
     <string name="total">Total: </string>
     <string name="delivery">Delivery</string>
+    <string name="input_promotion">Enter your promotion</string>
+    <string name="title_all_your_clothes">All your clothes here</string>
 </resources>
