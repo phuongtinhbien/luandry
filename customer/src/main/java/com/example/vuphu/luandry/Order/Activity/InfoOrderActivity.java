@@ -2,7 +2,6 @@ package com.example.vuphu.luandry.Order.Activity;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Build;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -13,9 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.vuphu.luandry.Notification.Popup;
 import com.example.vuphu.luandry.Order.ApdapterList.ListClothesAdapter;
-import com.example.vuphu.luandry.Order.ApdapterList.ListOrderDetailAdapter;
 import com.example.vuphu.luandry.Order.OBOrderDetail;
 import com.example.vuphu.luandry.Payment.AdapterList.ListPaymentAdapter;
 import com.example.vuphu.luandry.Payment.OBPayment;
@@ -91,7 +88,7 @@ public class InfoOrderActivity extends AppCompatActivity {
         serviceNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), PrepareOrderAddressActivity.class));
+                startActivity(new Intent(getApplicationContext(), FinalOrderActivity.class));
             }
         });
 

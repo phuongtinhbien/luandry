@@ -48,7 +48,8 @@
             android:theme="@style/AppTheme.FullScreen" />
         <activity android:name=".Order.Activity.PrepareOrderPaymentActivity" />
         <activity android:name=".Payment.Activity.PaymentActivity" />
-        <activity android:name=".FinalOrderActivity"></activity>
+        <activity android:name=".Order.Activity.FinalOrderActivity"
+            android:parentActivityName=".Order.Activity.InfoOrderActivity"></activity>
     </application>
 
 </manifest>

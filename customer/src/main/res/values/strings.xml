@@ -81,4 +81,10 @@
     <string name="delivery">Delivery</string>
     <string name="input_promotion">Enter your promotion</string>
     <string name="title_all_your_clothes">All your clothes here</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="succefful_order">Your order have been saved</string>
+    <string name="thanks">Thank you!!!</string>
+    <string name="your_code">Above is your order\'s QR Code</string>
+    <string name="back_to_home">Back to home</string>
 </resources>

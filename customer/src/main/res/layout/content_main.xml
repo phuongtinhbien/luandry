@@ -24,6 +24,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:nestedScrollingEnabled="false"
+                            android:layout_marginBottom="@dimen/card_margin"
                             tools:listitem="@layout/item_service">
 
                         </android.support.v7.widget.RecyclerView>
