@@ -19,6 +19,129 @@
                     android:orientation="vertical">
                         <include
                             layout="@layout/nav_header_main"></include>
+                    <android.support.design.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="@dimen/card_margin"
+                        app:cardBackgroundColor="@color/bgBlue"
+                        app:cardCornerRadius="@dimen/card_radius"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_item"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/nav_img_avatar"
+                                    android:layout_width="@dimen/avatar_order_size"
+                                    android:layout_height="@dimen/avatar_order_size"
+                                    android:layout_margin="@dimen/nav_header_vertical_spacing"
+                                    android:contentDescription="@string/nav_header_desc"
+                                    android:elevation="4dp"
+                                    android:src="@color/bgWhite"
+                                    android:translationZ="4dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="@dimen/margin_item"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/nav_txt_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-black"
+                                        android:text="John Doe"
+                                        android:textAllCaps="true"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="@dimen/font_size_topic" />
+
+                                    <TextView
+                                        android:id="@+id/nav_txt_email"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif"
+                                        android:text="@string/nav_header_subtitle"
+                                        android:textColor="@android:color/white" />
+
+                                    <TextView
+                                        android:id="@+id/nav_txt_phone"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif"
+                                        android:text="0912 568 350"
+                                        android:textColor="@android:color/white" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/divider"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="@dimen/margin_item"
+                                android:layout_marginHorizontal="16dp"
+                                android:background="@color/white" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/info_order_pickup_place"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginBottom="@dimen/margin_item"
+                                    android:drawableLeft="@drawable/ic_person_location_white"
+                                    android:drawablePadding="4dp"
+                                    android:drawableTint="@color/white"
+                                    android:fontFamily="sans-serif"
+                                    android:text="278, Nam Ki Khoi Nghia, P.8, Q.3, TP.HCM"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/info_order_delivery_place"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginBottom="@dimen/margin_item"
+                                    android:drawableLeft="@drawable/ic_location_white"
+                                    android:drawablePadding="4dp"
+                                    android:drawableTint="@color/white"
+                                    android:fontFamily="sans-serif"
+                                    android:layoutDirection="inherit"
+                                    android:text="278, Nam Ki Khoi Nghia, P.8, Q.4, TP.HCM"
+                                    android:textColor="@color/white" />
+
+
+                            </LinearLayout>
+
+                            <android.support.design.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                android:text="Leave a note"
+                                android:id="@+id/info_order_note"
+                                android:textColor="@color/bgBlue"
+                                app:backgroundTint="@color/white"
+                                app:cornerRadius="20dp" />
+
+                        </LinearLayout>
+
+
+                    </android.support.design.card.MaterialCardView>
                         <android.support.v7.widget.RecyclerView
                             android:id="@+id/list_service"
                             android:layout_width="match_parent"

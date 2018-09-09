@@ -6,7 +6,7 @@
     <dimen name="nav_header_height">250dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="margin_item">8dp</dimen>
-    <dimen name="card_elevation">12dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
     <dimen name="card_margin">15dp</dimen>
     <dimen name="card_radius">10dp</dimen>
     <!--font size-->
@@ -35,7 +35,9 @@
     <dimen name="item_service_size">80dp</dimen>
     <dimen name="promotion_size">200dp</dimen>
     <dimen name="item_category_size">72dp</dimen>
-    <dimen name="item_prepare_order_size">72dp</dimen>
+    <dimen name="item_prepare_order_size">56dp</dimen>
     <dimen name="avatar_order_size">52dp</dimen>
     <dimen name="font_size_text_mini">12sp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 </resources>

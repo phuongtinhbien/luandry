@@ -11,13 +11,11 @@
     tools:layout_editor_absoluteY="25dp">
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottom_layout"
         android:background="@color/bgWhite"
         android:orientation="vertical">
-
         <include layout="@layout/toolbar"></include>
 
 

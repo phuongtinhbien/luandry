@@ -1,6 +1,4 @@
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -10,7 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
         <!--<item name="android:windowTranslucentStatus">true</item>-->
         <item name="android:windowTranslucentNavigation">true</item>
-        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
     </style>
 
     <style name="AppTheme1" parent="Theme.MaterialComponents.Light.DarkActionBar">
@@ -20,8 +19,10 @@
         <item name="colorAccent">@color/colorAccent</item>
         <!--<item name="android:windowTranslucentStatus">true</item>-->
         <item name="android:windowTranslucentNavigation">true</item>
-        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
-        <item name="android:titleTextAppearance">@style/TextAppearance.Widget.Event.Toolbar.Title</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
+        <item name="android:titleTextAppearance">@style/TextAppearance.Widget.Event.Toolbar.Title
+        </item>
         <item name="toolbarStyle">@style/ToolBarStyle.Base</item>
     </style>
 
@@ -29,6 +30,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="AppTheme.FullScreen" parent="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -36,7 +38,7 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <style name="ToolBarStyle" parent="ToolBarStyle.Base"/>
+    <style name="ToolBarStyle" parent="ToolBarStyle.Base" />
 
     <style name="ToolBarStyle.Base" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:elevation">0dp</item>
@@ -53,7 +55,7 @@
         <item name="android:textStyle">normal</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:textAlignment">center</item>
-       <!-- <item name="android:textAllCaps">true</item>-->
+        <!-- <item name="android:textAllCaps">true</item>-->
         <item name="android:gravity">center_horizontal</item>
         <item name="android:textSize">@dimen/font_size_toolbar</item>
     </style>
@@ -71,6 +73,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@android:color/black</item>
     </style>
+
     <style name="textTopic" parent="">
         <item name="android:layout_margin">12dp</item>
         <item name="android:fontFamily">sans-serif-black"</item>
@@ -84,7 +87,9 @@
         <item name="android:text">@string/service</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="android:textSize">@dimen/font_size_chip</item>
-    </style>c
+    </style>
+    c
+
     <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
         <item name="colorPrimary">@color/endGradient</item>
         <item name="colorPrimaryDark">@color/startGradient</item>
@@ -92,6 +97,7 @@
         <item name="android:fontFamily">sans-serif-condensed</item>
 
     </style>
+
     <style name="textNavigation" parent="">
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textSize">@dimen/font_size_text</item>
@@ -99,4 +105,8 @@
     </style>
 
     <dimen name="font_size_chip">14sp</dimen>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
